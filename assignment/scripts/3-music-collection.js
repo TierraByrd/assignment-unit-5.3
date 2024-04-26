@@ -15,10 +15,15 @@ function addToCollection(collection, title, artist, yearPublished) {
   return newNew;
   }
 addToCollection(myCollection, 'Purple Rain', 'Prince', 1984);
+addToCollection(myCollection, 'Never Broke Again', 'NBA YoungBoy', 2018 );
+addToCollection(myCollection, 'The Emancipation of Mimi', 'Mariah Carey', 2005);
+addToCollection(myCollection, 'As I Am', 'Alicia Keys', 2007);
+addToCollection(myCollection, 'Ambition', 'Wale', 2011);
+addToCollection(myCollection, 'Hood Hottest Princess', 'Sexy Red', 2023);
+console.log('My Collection is now', myCollection);
 
-console.log(' My Collection is now: ', myCollection);
 
-
+console.log('Showing My Collection: ' , showCollection);
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
