@@ -23,7 +23,24 @@ addToCollection(myCollection, 'Hood Hottest Princess', 'Sexy Red', 2023);
 console.log('My Collection is now', myCollection);
 
 
-console.log('Showing My Collection: ' , showCollection);
+
+function showCollection(collection) {
+  for (let i = 0; i < collection.length; i++) {
+    const album = collection[i];
+    console.log( album.title + ' by ' + album.artist +  ' published in ' + album.yearPublished);
+  }
+}
+showCollection(myCollection);
+
+
+
+
+
+
+
+
+
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
