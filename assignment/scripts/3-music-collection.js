@@ -3,9 +3,20 @@ console.log('***** Music Collection *****')
 let myCollection = [];
 console.log('My collection: ', myCollection);
 
+function addToCollection(collection, title, artist, yearPublished) {
+  const newNew = {
+    title: title, 
+    artist: artist, 
+    yearPublished: yearPublished
+   };
+  
 
+  collection.push(newNew);
+  return newNew;
+  }
+addToCollection(myCollection, 'Purple Rain', 'Prince', 1984);
 
-
+console.log(' My Collection is now: ', myCollection);
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
