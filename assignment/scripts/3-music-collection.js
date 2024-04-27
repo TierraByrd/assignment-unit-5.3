@@ -32,9 +32,20 @@ function showCollection(collection) {
 }
 showCollection(myCollection);
 
-
-
-
+function findByArtist(collection, artist) {
+let matchingResults = [];
+for (let i = 0; i < collection.length; i++) {
+  if (collection[i].artist===artist) {
+    matchingResults.push(collection[i]);
+  } 
+}
+return matchingResults;
+} 
+console.log('Find by Artist: "Mariah Carey" ', findByArtist(myCollection, 'Mariah Carey'));
+console.log('Find by Artist: "Prince" ', findByArtist(myCollection, 'Prince'));
+console.log('Find by Artist: " NBA YoungBoy" ', findByArtist(myCollection, 'NBA YoungBoy'));
+console.log('Find by Artist: "Alicia Keys" ', findByArtist(myCollection, 'Alicia Keys'));
+console.log('Find by Artist: "Beyonce"', findByArtist(myCollection, 'Beyonce'));
 
 
 
